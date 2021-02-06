@@ -1,0 +1,85 @@
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: mediumaquamarine;
+    z-index: 9999;
+    border: 0;
+    font-size: 16px !important;
+    line-height: 1.42857143 !important;
+    border-radius: 0;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: mediumaquamarine !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.s3 {
+    padding: 10px 10px 15px 15px;
+    border-color: pink;
+    border-radius: 5px;
+    border-style: solid;
+    margin-bottom: 7px;
+}
+
+h2 {
+    margin-top: 80px;
+}
+
+.row {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#vaka {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#vaka td,
+#vaka th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#vaka tr:nth-child(even) {
+    background-color: lavender;
+}
+
+#vaka tr:hover {
+    background-color: pink;
+}
+
+#vaka th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+footer {
+    background-color: mediumaquamarine;
+    color: white;
+    padding: 15px;
+}
+
+.bottom {
+    margin-left: 15px;
+}

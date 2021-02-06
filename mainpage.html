@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Covid19 Turkey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        /* Add a gray background color and some padding to the footer */
+        
+        .carousel-inner img {
+            width: 80%;
+            /* Set width to 100% */
+            margin: auto;
+            min-height: 100px;
+        }
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+        
+        .container-fluid {
+            padding: 60px 50px;
+        }
+        
+        .logo {
+            margin-top: 20px;
+            color: #f4511e;
+            font-size: 200px;
+        }
+        
+        .logoKucuk {
+            margin-top: 220px;
+            margin-right: 50px;
+            color: #f4511e;
+            font-size: 100px;
+        }
+        
+        .logo-belirti {
+            font-size: 100px;
+            height: 500%;
+            margin-left: 230px;
+            color: red;
+        }
+        
+        .bottom {
+            margin-left: 15px;
+        }
+        
+        .kartlar1 {
+            padding: 10px 10px 15px 15px;
+            border-color: lightskyblue;
+            border-radius: 10px;
+            border-style: solid;
+            margin-bottom: 7px;
+        }
+        
+        .kartlar2 {
+            padding: 10px 10px 15px 15px;
+            border-color: lightgreen;
+            border-radius: 10px;
+            border-style: solid;
+            margin-bottom: 7px;
+        }
+        
+        .kartlar3 {
+            padding: 10px 10px 15px 15px;
+            border-color: crimson;
+            border-radius: 10px;
+            border-style: solid;
+            margin-bottom: 7px;
+        }
+        
+        .imp {
+            padding: 10px 10px 15px 15px;
+            border-color: orangered;
+            background-color: lightpink;
+            border-radius: 10px;
+            border-style: solid;
+            margin-bottom: 7px;
+        }
+        
+        footer {
+            background-color: mediumaquamarine;
+            color: white;
+            padding: 15px;
+        }
+        
+        .navbar {
+            margin-bottom: 0;
+            background-color: mediumaquamarine;
+            z-index: 9999;
+            border: 0;
+            font-size: 16px !important;
+            line-height: 1.42857143 !important;
+            border-radius: 0;
+        }
+        
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #fff !important;
+        }
+        
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            color: mediumaquamarine !important;
+            background-color: #fff !important;
+        }
+        
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top ">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Covid19Turkey</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href=#hakkında>Hakkında</a></li>
+                <li><a href="#belirtiler">Belirtiler</a></li>
+                <li><a href="#haberler">Haberler</a></li>
+                <li><a href="#vaka">Vaka Sayıları</a></li>
+                <li><a href="sss.html">3S</a></li>
+                <li><a href="#duyuru">Duyurular</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Aramak istediğiniz kelime..." name="search">
+                </div>
+                <button type="submit" class="btn btn-default">Ara</button>
+            </form>
+        </div>
+
+    </nav>
+
+    <!-- Container (hakkında kısmı) -->
+    <div id="hakkında" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1 style="text-align:center;font-size:300%;color:#f4511e">COVID19 NEDİR?</h2><br>
+                    <h4 style="font-family:sans-serif; font-size:110%;color:darkorange">Koronavirüsler, hayvanlarda veya insanlarda hastalığa neden olabilecek büyük bir virüs ailesidir. İnsanlarda, birkaç koronavirüsün soğuk algınlığından Orta Doğu Solunum Sendromu (MERS) ve Şiddetli Akut Solunum Sendromu (SARS) gibi
+                        daha şiddetli hastalıklara kadar solunum yolu enfeksiyonlarına neden olduğu bilinmektedir.<br> Yeni Koronavirüs Hastalığına SAR-CoV-2 virüsü neden olur.</h4><br>
+                    <p style="font-family:sans-serif; font-size:120%">Yeni Koronavirüs Hastalığı (COVID-19), ilk olarak Çin’in Vuhan Eyaleti’nde Aralık ayının sonlarında solunum yolu belirtileri (ateş, öksürük, nefes darlığı) gelişen bir grup hastada yapılan araştırmalar sonucunda 13 Ocak 2020’de tanımlanan
+                        bir virüstür. Salgın başlangıçta bu bölgedeki deniz ürünleri ve hayvan pazarında bulunanlarda tespit edilmiştir. Daha sonra insandan insana bulaşarak Vuhan başta olmak üzere Hubei eyaletindeki diğer şehirlere ve Çin Halk Cumhuriyeti’nin
+                        diğer eyaletlerine ve diğer dünya ülkelerine yayılmıştır.
+                    </p>
+
+            </div>
+            <div class="col-sm-3">
+                <i class="fas fa-virus logo"></i>
+            </div>
+            <div class="col-sm-1">
+                <i class="fas fa-virus logoKucuk"></i>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h3 style="text-align:center;font-size:300% ;color:#f4511e">Koronavirüs ve Covid19 aynı virüs müdür?</h3>
+        <div class="col-sm-6">
+            <h4 style="font-family:sans-serif;font-size:200%;color:darkorange"><b>Koronavirüs Nedir?</b></h4>
+            <p style="font-family:sans-serif;padding-top: 15px; font-size:110%">Bütün virüs türleri gibi zaman içinde sürekli evrimleşen koronavirüsler 2002 senesinden itibaren grip benzeri semptomlar gösteren daha ciddi sağlık sorunlarına neden olmaya başlamıştır. Koronavirüsler hayvanlar ve insanlar arasında bulaşma
+                riski taşıyan, yani zoonik virüslerdir. Geçmişte MERS adıyla bilinen Orta Doğu Solunum Sendromu’nun develerden, SARS adıyla bilinen Şiddetli Akut Solunum Sendromu’nun da misk kedilerinden insana geçtiği düşünülmektedir.
+            </p>
+
+        </div>
+        <div class="col-sm-6">
+            <h4 style="font-family:sans-serif;font-size:200%;color:darkorange"><b>Yeni Koronavirus Hastalığı (Covid-19) Nedir?</b></h4>
+            <p style="font-family:sans-serif; padding-top: 15px; font-size:110%">2019 yılında ortaya çıkan ve Covid-19 hastalığına yol açan yeni tip koronavirüs, insanda etki gösteren koronavirüslerin yedinci çeşidi ve bilimsel adı SARS-CoV-2.<br> Hayvandan insana ve insandan insana bulaşabilen bu yeni koronavirüs, 2019
+                yılında Vuhan'daki salgın başlamadan önce bilinmiyordu.</p>
+        </div>
+    </div>
+
+    <!-- Container (BELİRTİLER KISMI) -->
+    <div id="belirtiler" style="background-color:rgb(170, 250, 223); margin-bottom: 40px; padding-top: 25px;">
+        <h1 style="text-align:center; font-size:300%; color:#f4511e">BELİRTİLER</h1><br>
+        <div class="col-sm-4">
+            <i class="fas fa-temperature-high logo-belirti"></i>
+            <h3 style="text-align:center;font-size:120%;color:#535decbd;margin-left: 30px;"><b>Yüksek Ateş</b></h3><br>
+
+        </div>
+        <div class="col-sm-4">
+            <i class="fas fa-head-side-cough logo-belirti"></i>
+            <h3 style="text-align:center;font-size:120%;color:#535decbd;margin-left: 80px;"><b>Öksürük</b></h3><br>
+        </div>
+        <div class="col-sm-4">
+            <i class="fas fa-lungs-virus logo-belirti"></i>
+            <h3 style="text-align:center;font-size:120%;color:#535decbd;margin-left: 120px;"><b>Nefes Darlığı</b>
+            </h3><br>
+        </div>
+        <br>
+        <h4 style="text-align:center; color: rgb(219, 33, 33);"><i>Bu belirtilerden en az biri görüldüğü takdirde en yakın hastaneye gidip test yaptırmalısınız.</i></h4>
+        <br> <br> <br>
+        <h5 style="text-align:center;font-size: 30px; color:rgb(10, 148, 10)">
+            <B>PEKİ KİMLER DAHA FAZLA RİSK ALTINDA?</B>
+        </h5> <br> <br>
+        <div class="col-sm-4">
+            <i class="fas fa-user-nurse logo-belirti"></i>
+            <h3 style="text-align:center;font-size:120%;color:#1e2cf4;margin-left:30px;margin-bottom:20px;"><b>Sağlık Çalışanları</b></h3><br>
+        </div>
+        <div class="col-sm-4">
+            <i class="fas fa-heartbeat logo-belirti"></i>
+            <h3 style="text-align:center;font-size:120%;color:#1e2cf4;margin-left:80px;margin-bottom:20px;"><b>Kalp Hastalığı</b></h3><br>
+        </div>
+        <div class="col-sm-4">
+            <i class="fas fa-lungs logo-belirti"></i>
+            <h3 style="text-align:center;font-size:120%;color:#1e2cf4;margin-left:120px;margin-bottom:20px;"><b>Solunum Yolu Hastalığı</b></h3><br>
+        </div>
+        <p style="padding-bottom: 40px;margin-left: 30px;font-size:large">Daha fazla bilgi için <a href="sss.html">buraya  </a>tıklayabilirsiniz.</p>
+
+    </div>
+    <br>
+
+    <!--Vaka sayısı kısmı-->
+    <div id="vaka">
+        <h2 style="text-align:center">Vaka Sayıları</h2>
+        <div class="col-sm-3 ">
+            <div class="kartlar1">
+                <h3 style="text-align: center;">18 Mayıs Pazartesi</h3>
+                <h4 style="text-align: center;">Vaka Sayısı: 1.158</h4>
+                <h4 style="text-align: center;">Ölen Sayısı:31</h4>
+                <h4 style="text-align: center;">İyileşen Sayısı:1.615</h4>
+            </div>
+        </div>
+        <div class="col-sm-3 ">
+            <div class="kartlar2">
+                <h3 style="text-align: center;">17 Mayıs Pazar</h3>
+                <h4 style="text-align: center;">Vaka Sayısı: 1.368</h4>
+                <h4 style="text-align: center;">Ölen Sayısı:44</h4>
+                <h4 style="text-align: center;">İyileşen Sayısı:1.825</h4>
+            </div>
+        </div>
+        <div class="col-sm-3 ">
+            <div class="kartlar3">
+                <h3 style="text-align: center;">16 Mayıs Cumartesi</h3>
+                <h4 style="text-align: center;">Vaka Sayısı: 1.610</h4>
+                <h4 style="text-align: center;">Ölen Sayısı:41</h4>
+                <h4 style="text-align: center;">İyileşen Sayısı:2.004</h4>
+            </div>
+        </div>
+        <div class="col-sm-3 ">
+            <div class="kartlar1">
+                <h3 style="text-align: center;">15 Mayıs Cuma</h3>
+                <h4 style="text-align: center;">Vaka Sayısı: 1.708</h4>
+                <h4 style="text-align: center;">Ölen Sayısı:48</h4>
+                <h4 style="text-align: center;">İyileşen Sayısı:2.103</h4>
+            </div>
+        </div>
+        <br>
+        <div class="col-sm-3 ">
+            <div class="kartlar2">
+                <h3 style="text-align: center;">14 Mayıs Perşembe</h3>
+                <h4 style="text-align: center;">Vaka Sayısı: 1.635</h4>
+                <h4 style="text-align: center;">Ölen Sayısı:55</h4>
+                <h4 style="text-align: center;">İyileşen Sayısı:2.315</h4>
+            </div>
+        </div>
+        <div class="col-sm-3 ">
+            <div class="kartlar3">
+                <h3 style="text-align: center;">13 Mayıs Çarşamba</h3>
+                <h4 style="text-align: center;">Vaka Sayısı: 1.639</h4>
+                <h4 style="text-align: center;">Ölen Sayısı:58</h4>
+                <h4 style="text-align: center;">İyileşen Sayısı:2.826</h4>
+            </div>
+        </div>
+        <div class="col-sm-3 ">
+            <div class="kartlar1">
+                <h3 style="text-align: center;">12 Mayıs Salı</h3>
+                <h4 style="text-align: center;">Vaka Sayısı: 1.704</h4>
+                <h4 style="text-align: center;">Ölen Sayısı:53</h4>
+                <h4 style="text-align: center;">İyileşen Sayısı:3.109</h4>
+            </div>
+        </div>
+        <div class="col-sm-3 ">
+            <div class="kartlar2">
+                <h3 style="text-align: center;">11 Mayıs Pazartesi</h3>
+                <h4 style="text-align: center;">Vaka Sayısı: 1.114</h4>
+                <h4 style="text-align: center;">Ölen Sayısı:55</h4>
+                <h4 style="text-align: center;">İyileşen Sayısı:3.089</h4>
+            </div>
+        </div>
+        <br>
+        <div class="col-sm-3 ">
+            <div class="kartlar3">
+                <h3 style="text-align: center;">10 Mayıs Pazar</h3>
+                <h4 style="text-align: center;">Vaka Sayısı: 1.542</h4>
+                <h4 style="text-align: center;">Ölen Sayısı:47</h4>
+                <h4 style="text-align: center;">İyileşen Sayısı:3.211</h4>
+            </div>
+        </div>
+        <div class="col-sm-3 ">
+            <div class="kartlar1">
+                <h3 style="text-align: center;">9 Mayıs Cumartesi</h3>
+                <h4 style="text-align: center;">Vaka Sayısı: 1.546</h4>
+                <h4 style="text-align: center;">Ölen Sayısı:50</h4>
+                <h4 style="text-align: center;">İyileşen Sayısı:3.084</h4>
+            </div>
+        </div>
+        <div class="col-sm-3 ">
+            <div class="kartlar2">
+                <h3 style="text-align: center;">8 Mayıs Cuma</h3>
+                <h4 style="text-align: center;">Vaka Sayısı: 1.848</h4>
+                <h4 style="text-align: center;">Ölen Sayısı:48</h4>
+                <h4 style="text-align: center;">İyileşen Sayısı:3.412</h4>
+            </div>
+        </div>
+        <div class="col-sm-3 ">
+            <div class="kartlar3">
+                <h3 style="text-align: center;">7 Mayıs Perşembe</h3>
+                <h4 style="text-align: center;">Vaka Sayısı: 1.977</h4>
+                <h4 style="text-align: center;">Ölen Sayısı:57</h4>
+                <h4 style="text-align: center;">İyileşen Sayısı:4.782</h4>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="imp">
+                    <h3 style="text-align: center;">TOPLAM</h3>
+                    <h4 style="text-align: center;">Vaka Sayısı: 150.593</h4>
+                    <h4 style="text-align: center;">Ölen Sayısı:4.171</h4>
+                    <h4 style="text-align: center;">İyileşen Sayısı:111.577</h4>
+                </div>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+
+    </div>
+    <br>
+
+    <!-- Container (haber kısmı) -->
+
+    <div id="haberler" class="carousel slide" data-ride="carousel">
+        <div>
+            <h1 style="text-align:center;font-size:300%;color:#f4511e">HABERLER</h1><br>
+
+        </div>
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#haberler" data-slide-to="0" class="active"></li>
+            <li data-target="#haberler" data-slide-to="1"></li>
+            <li data-target="#haberler" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="chc.jpg" alt="Çinden Haberler">
+                <div class="carousel-caption">
+                    <h3>Çin'de artan Kovid-19 vakaları nedeniyle 6 yetkili görevden alındı</h3>
+                    <p>Çin basınında yer alan bir habere göre, koronavirüs vakalarının yeniden arttığı bölgelerde 6 yetkilinin görevden alındığı aktarıldı. Diğer yandan Şanşi Eyalet Halk Kongresi, ülkede yaygın bir davranış olarak kabul gören yere tükürme
+                        hareketini, Kovid-19 salgını sürecinde halk için bir tehdit oluşturabileceği gerekçesiyle çıkardığı bir yasayla yasakladı.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="carousel-caption">
+                    <h3>Rize'de "drone" ile maske ve sosyal mesafe denetimi yapılıyor</h3>
+                    <p>Ekiplerin sokak ve caddelerde devriye gezerek denetimlerini sürdürdüğü belirten İl Emniyet Müdürü ,"Alınan kararın etkin uygulamasını sağlamak amacıyla drone ile havadan denetim yapılıyor. Bu tespitleri yaptıktan sonra maske takmayan,
+                        yanlış takan ve sosyal mesafe kuralına uymayan vatandaşlarımıza cezai işlem uygulayacağız." dedi.</p>
+                </div>
+                <img src="mask.jpg" alt="Rizede drone ile denetim">
+            </div>
+
+            <div class="item">
+                <img src="tan.jpg" alt="Limon ve Zencefille kurtuluş">
+                <div class="carousel-caption">
+                    <h3>Tanzanya Devlet Başkanı'nın oğlunun Kovid-19'dan limon ve zencefille kurtulduğu iddia edildi</h3>
+                    <p>Tanzanya Devlet Başkanı John Magufili, oğlunun koronavirüse yakalandıktan sonra geleneksel tedavi yöntemleriyle iyileştiğini iddia etti. Ulusal basında yer alan haberlerde, Devlet Başkanı Magufili'nin oğlunun, Kovid-19'u limon ve zencefil
+                        kürüyle atlattığı öne sürüldü.</p>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#haberler" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#haberler" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </div>
+    <p style="padding-bottom: 40px;margin-left: 30px; padding-top:40px;font-size:large;">Daha fazla haber için <a href="haberler.html">buraya  </a>tıklayabilirsiniz.</p>
+
+
+    <!--Duyurular kısmı-->
+    <div id="duyuru">
+        <h2 style="text-align:center;margin-top: 25px;color:lightseagreen;font-size: xx-large;margin-bottom:40px;">DUYURULAR</h2>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+                <img src="duyuru1.jpg" alt="Bayramda Yasak">
+            </div>
+            <div class="col-sm-6">
+                <h3 style="color: lightseagreen;">Bakanlıktan Son Dakika:</h3>
+                <h2 style="color:mediumaquamarine;">BAYRAMDA SOKAĞA ÇIKMAK YASAK!</h2>
+                <p style="font-family:sans-serif; font-size:120%">Bu sene 1. günü 24 Mayıs'a denk gelen Ramazan Bayramı bu yıl sokağa çıkma uygulaması kapsamınsa evlerde geçecek. Sokağa çıkma yasağında kurallara uymak ve çeşitli ihtiyaçlarını gidermek isteyen vatandaşlar, bayramda 4 günlük sokağa çıkma
+                    yasağı genelgesini inceliyor. İçişleri Bakanlığı tarafından yayınlanan genelgede 81 ilde 4 gün uygulanacak olan sokağa çıkma kısıtlamasına yönelik detaylar belli oldu. 22.05.2020 tarihi saat 24.00 ile 26.05.2020 tarihi saat 24.00 arasında
+                    81 ilimiz sınırları içinde bulunan vatandaşlarımızın sokağa çıkmaları kısıtlanacaktır.</p>
+            </div>
+        </div> <br> <br>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6">
+                <h3 style="color:mediumblue">Cumhurbaşkanı açıkladı:</h3>
+                <h2 style="color:midnightblue">Maske takmak zorunlu hale getirildi+20 Yaş altına sokağa çıkma yasağı!</h2>
+                <p style="font-family:sans-serif; font-size:120%">Cumhurbaşkanı Recep Tayyip Erdoğan, yeni tip koronavirüsle (Kovid-19) mücadele kapsamında, alınan yeni tedbirleri açıkladı. Alınan önemler arasında belirlen yerlerde maske takma zorunluluğu da var. Pazar yerleri ve marketler gibi toplu
+                    halde bulunulan tüm alanlarda maske takılmasının artık zorunlu olacağını ifade eden Erdoğan, alınan tedbirleri şöyle sıraladı: "Ülkemizdeki 20 yaş altı, 1 Ocak 2000 ve üzeri doğumlular için de sokağa çıkma yasağı getiriyoruz. İkazlara
+                    uymayarak aksi yönde davranışlar sergilemekte ısrar edenlere gereken idari ve adli cezalar tereddütsüz şekilde uygulanacaktır. Sokaklar dahil tüm kamuya açık mekanlarda kalabalık oluşturacak şekilde asla bir arada bulunulamayacak."</p>
+            </div>
+            <div class="col-sm-5">
+                <img src="duyuru2.jpg" style="padding-top: 15px;" alt="Maske Takma Zorunluluğu">
+            </div>
+        </div> <br> <br>
+        <div class="row">
+            <div class="col-sm-7">
+                <img src="duyuru3.png" alt="Kanver">
+            </div>
+            <div class="col-sm-5">
+                <h2 style="padding-top: 40px; color:blueviolet;">Bağış önemli!</h2>
+                <p style="font-family:sans-serif; font-size:120%">COVID-19 tanısı konulan, tedavi sürecinin ardından iyileşen hastalardan Türk Kızılay tarafından toplanan kan plazmasının kritik durumda olan hastalarda kullanılması amaçlanmaktadır.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <footer class="text-center">
+            <p>Bu sayfa Fatma Zehra Çiftçi tarafından yapılmıştır.</p>
+
+            <a class="bottom" href="https://tr-tr.facebook.com/saglikbakanligi">Facebook</a>
+            <a class="bottom" href="https://twitter.com/coronaturkey">Twitter</a>
+            <a class="bottom" href="https://www.instagram.com/drfahrettinkoca/?hl=tr">Instagram</a>
+            <a class="bottom" href="https://www.youtube.com/channel/UCLqTGkjVRaM7Koyqb-kZ7eQ">Youtube</a>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>
